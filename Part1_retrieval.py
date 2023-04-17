@@ -1,6 +1,8 @@
 from imports_and_libraries import *
 
 def user_retrieve_files(keyword):
+    f = open('user/word_indices.json')
+    word_indices = json.load(f)
     try:
         index = word_indices['word_to_index'][keyword]
     except:
@@ -13,15 +15,19 @@ def user_retrieve_files(keyword):
 def server_retrieve_files(p,f,number_of_files):
 
     length = 2 ** d
-    for j in range(number_of_files):
-        file_read = open("server/{}.enc".format(j + 1),"r")
+    # read json file 
+    f = open('server/file_indices.json')
+    file_indices = json.load(f)
+    for file_name in file_indices["file_index"].keys():
+        j = file_indices["file_index"][file_name]
+        file_read = open("server/{}.enc".format(file_name[:-4]),"r")
         text = file_read.read()
         M = text[-2 ** d:]
         if int(M[p]) ^ pseudo_random_bit(f,j):
-            file_write = open("user/{}.enc".format(j + 1),"w")
+            file_write = open("user/{}.enc".format(file_name[:-4]),"w")
             file_write.write(text[:-2 ** d])
             file_write.close()
-            print("Retrieved file {}.enc".format(j + 1))
+            print("Retrieved file {}.enc".format(file_name[:-4]))
         file_read.close()
 
 def retrieve_files(keyword):

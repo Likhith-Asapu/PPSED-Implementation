@@ -10,5 +10,3 @@ NUMBER_OF_WORDS = 8
 NUMBER_OF_FILES = 6
 t = 3
 d = 3
-f = open('word_indices.json')
-word_indices = json.load(f)
