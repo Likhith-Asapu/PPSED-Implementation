@@ -4,7 +4,7 @@ Implementation of Privacy Preserving Keyword Searches on Remote Encrypted Data (
 
 ## Requirements
 
-- Python3
+- Python 3.09 or greater
 - nltk
 - glob
 - shutil
