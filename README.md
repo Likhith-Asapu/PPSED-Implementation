@@ -47,20 +47,20 @@ All three schemes follow the same procedure of encryption of plain text to ciphe
 
 To run the encrytion code for Scheme 1, run the following command:
 
-```bash
+```sh
 cd Scheme1/
 python3 encryption.py
 ```
 
 The files to be encrypted must be present in the user directory. Enter the path of the file to be encrypted relative to the user directory. The following prompt pops up in running the code. 
 
-```bash
+```
 Enter File Name for Encryption: <path of the file to be encrypted relative to user directory>
 ```
 
 Example:
     
-```bash
+```
 Enter File Name for Encryption: 2.txt
 ```
 
@@ -102,19 +102,19 @@ For scheme 1 and secure update these files will be retrieved to the user directo
 
 To run the decryption code for any scheme change directory to that scheme folder and ensure that for scheme 1 and secure update the files are present in user directory whereas for scheme 3 they are present in the user_mobile directory. Also make sure that the key for the file is present in the folder as .key file. Run the following command:
 
-```bash
+```
 python3 decryption.py
 ```
 
 The following prompt pops up in running the code. 
 
-```bash
+```
 Enter File Name for Decryption: <path of the file to be decrypted relative to user directory>
 ```
 
 Example:
     
-```bash
+```
 Enter File Name for Decryption: 2.enc
 ```
 This will use the contents of 2.key as the key to decrypt the file 2.enc.
