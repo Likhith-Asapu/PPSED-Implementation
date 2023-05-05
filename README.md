@@ -17,10 +17,17 @@ This Repository contains the implementation of Privacy Preserving Keyword Search
 ```
 PPSED-Implementation
 ├───Scheme1
+│   ├───user
+│   ├───server
 │   └───Scheme1 related files
 ├───Scheme2
+│   ├───user
+│   ├───user_mobile
+│   ├───server
 │   └───Scheme2 related files
 ├───SecureUpdate
+│   ├───user
+│   ├───server
 │   └───SecureUpdate related files
 ├───file_decryption.py
 ├───file_encryption.py
@@ -29,8 +36,26 @@ PPSED-Implementation
 └───pseudo_random.py
 ```
 
+In scheme 1, scheme 2, and secure update files present in the user directory represent the files present in the user computer. Similarly, files present in the server directory represent the files present in the server device. In scheme 2 the files present in the the user_mobile device represent the files present in the user's mobile device.
+
+
 ## Usage
 
 ### Scheme 1
+
+To run the code for Scheme 1, run the following command:
+
+```bash
+$ cd Scheme1/
+$ python3 encryption.py
+```
+
+make sure that the files to be encrypted are present in the user directory. Enter the path of the file to be encrypted relative to user directory 
+
+```bash
+cd Scheme1/
+python3 encryption.py
+```
+
 
 
