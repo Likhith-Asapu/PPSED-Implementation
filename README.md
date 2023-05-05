@@ -74,23 +74,23 @@ The encrypted file is present in the Server folder and the corresponding key for
 
 To run the retrieval code for any scheme change directory to that scheme folder then run the following command:
 
-```bash
+```
 python3 retrieval.py
 ```
 
 The following prompt pops up in running the code. 
 
-```bash
+```
 Enter Keyword: <keyword to be searched>
 ```
 
 Example:
     
-```bash
+```
 Enter Keyword: work
 ```
 Output:
-```bash
+```
 Enter Keyword: work
 Retrieved file 2.enc
 Retrieved file 3.enc
@@ -127,7 +127,7 @@ Words can be added to the key word dictionary present in `user/word_indices.json
 
 To reset the folder to the original state where none of the files are encypted and the server folder is empty, run the following command:
 
-```bash
+```
 python3 clean.py
 ```
 
