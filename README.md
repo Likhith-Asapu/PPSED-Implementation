@@ -17,16 +17,20 @@ This Repository contains the implementation of Privacy Preserving Keyword Search
 ```
 PPSED-Implementation
 ├───Scheme1
-│   ├───encrypted
-│   └───plaintext
+│   └───Scheme1 related files
 ├───Scheme2
+│   └───Scheme2 related files
 ├───SecureUpdate
-│   ├───client
-│   ├───server
-│   └───utils
+│   └───SecureUpdate related files
 ├───file_decryption.py
 ├───file_encryption.py
 ├───README.md
 ├───one_time_pad.py
 └───pseudo_random.py
 ```
+
+## Usage
+
+### Scheme 1
+
+
