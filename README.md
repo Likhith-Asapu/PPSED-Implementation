@@ -74,7 +74,7 @@ The encrypted file is present in the Server folder and the corresponding key for
 
 To run the retrieval code for any scheme change directory to that scheme folder then run the following command:
 
-```
+```sh
 python3 retrieval.py
 ```
 
@@ -102,7 +102,7 @@ For scheme 1 and secure update these files will be retrieved to the user directo
 
 To run the decryption code for any scheme change directory to that scheme folder and ensure that for scheme 1 and secure update the files are present in user directory whereas for scheme 3 they are present in the user_mobile directory. Also make sure that the key for the file is present in the folder as .key file. Run the following command:
 
-```
+```sh
 python3 decryption.py
 ```
 
@@ -127,7 +127,7 @@ Words can be added to the key word dictionary present in `user/word_indices.json
 
 To reset the folder to the original state where none of the files are encypted and the server folder is empty, run the following command:
 
-```
+```sh
 python3 clean.py
 ```
 
