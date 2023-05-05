@@ -52,7 +52,7 @@ cd Scheme1/
 python3 encryption.py
 ```
 
-The files to be encrypted must be present in the user directory. Enter the path of the file to be encrypted relative to the user directory. The following prompt pops up in running the code. 
+The files to be encrypted must be present in the user directory. Enter the path of the file to be encrypted relative to the user directory. The following prompt pops up after running the code. 
 
 ```
 Enter File Name for Encryption: <path of the file to be encrypted relative to user directory>
@@ -78,7 +78,7 @@ To run the retrieval code for any scheme change directory to that scheme folder 
 python3 retrieval.py
 ```
 
-The following prompt pops up in running the code. 
+The following prompt pops up after running the code. 
 
 ```
 Enter Keyword: <keyword to be searched>
